@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,7 +45,7 @@ namespace _09.WpfAppMvvmLight
 
         public void show(string name)
         {
-            MessageBox.Show("name is" + name);
+            Messenger.Default.Send<string>(name, "Token1");
         }
     }
 }

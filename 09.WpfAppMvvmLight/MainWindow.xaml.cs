@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Messaging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,12 @@ namespace _09.WpfAppMvvmLight
         {
             InitializeComponent();
             this.DataContext = new MainViewModel();
+            Messenger.Default.Register<string>(this, "Token1", Show);
+        }
+
+        private void Show(string value)
+        {
+            MessageBox.Show(value);
         }
     }
 }
