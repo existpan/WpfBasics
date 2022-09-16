@@ -1,0 +1,26 @@
+﻿<Window
+    x:Class="_09.WpfAppMvvmLight.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:_09.WpfAppMvvmLight"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Label
+                Width="120px"
+                Height="40"
+                HorizontalContentAlignment="Center"
+                Content="{Binding Title}" />
+            <Button
+                Width="120px"
+                Height="40px"
+                Command="{Binding ShowCommand}"
+                Content="{Binding Name}" />
+        </StackPanel>
+    </Grid>
+</Window>
