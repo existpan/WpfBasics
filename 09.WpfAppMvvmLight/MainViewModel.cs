@@ -14,11 +14,11 @@ namespace _09.WpfAppMvvmLight
     {
         public MainViewModel()
         {
-            Name = "Peter";
-            ShowCommand = new RelayCommand(show);
+            title = "MvvmLight";
+            ShowCommand = new RelayCommand<string>(show);
         }
 
-        public RelayCommand ShowCommand { get; set; }
+        public RelayCommand<string> ShowCommand { get; set; }
 
         private string name;
         public string Name
@@ -42,11 +42,9 @@ namespace _09.WpfAppMvvmLight
             }
         }
 
-        public void show()
+        public void show(string name)
         {
-            Name = "Button";
-            Title = "Label";
-            MessageBox.Show("Click ");
+            MessageBox.Show("name is" + name);
         }
     }
 }

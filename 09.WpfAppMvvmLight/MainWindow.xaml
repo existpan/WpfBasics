@@ -11,6 +11,10 @@
     mc:Ignorable="d">
     <Grid>
         <StackPanel Orientation="Vertical">
+            <TextBox
+                Name="textBlockName"
+                Width="120px"
+                Height="40px" />
             <Label
                 Width="120px"
                 Height="40"
@@ -20,6 +24,7 @@
                 Width="120px"
                 Height="40px"
                 Command="{Binding ShowCommand}"
+                CommandParameter="{Binding ElementName=textBlockName, Path=Text}"
                 Content="{Binding Name}" />
         </StackPanel>
     </Grid>
