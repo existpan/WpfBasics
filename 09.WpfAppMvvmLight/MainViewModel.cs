@@ -16,10 +16,10 @@ namespace _09.WpfAppMvvmLight
         public MainViewModel()
         {
             title = "MvvmLight";
-            ShowCommand = new RelayCommand<string>(show);
+            ShowCommand = new RelayCommand(show);
         }
 
-        public RelayCommand<string> ShowCommand { get; set; }
+        public RelayCommand ShowCommand { get; set; }
 
         private string name;
         public string Name
@@ -43,9 +43,9 @@ namespace _09.WpfAppMvvmLight
             }
         }
 
-        public void show(string name)
+        public void show()
         {
-            Messenger.Default.Send<string>(name, "Token1");
+
         }
     }
 }
