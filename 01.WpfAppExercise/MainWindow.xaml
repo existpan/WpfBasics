@@ -8,6 +8,7 @@
     Title="WPF布局UI练习"
     Width="1920"
     Height="1080"
+    WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
@@ -15,9 +16,116 @@
             <RowDefinition Height="20*" />
         </Grid.RowDefinitions>
         <!--  标题栏  -->
-        <Grid Background="#DCDCDC" />
+        <Grid Background="#DEDEDE">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Margin="50,0,0,0">
+                <Label
+                    VerticalAlignment="Center"
+                    Content="WPF UI Teach"
+                    FontSize="26px"
+                    Foreground="#d58091" />
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="A"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="用户"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <StackPanel Orientation="Horizontal">
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="A"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="财务"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <StackPanel Orientation="Horizontal">
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="A"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="积分"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <StackPanel Orientation="Horizontal">
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="A"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="市场"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="4">
+                    <StackPanel Orientation="Horizontal">
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="A"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="客服"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="5">
+                    <StackPanel Orientation="Horizontal">
+                        <Label
+                            VerticalAlignment="Center"
+                            Content="蜡笔小新"
+                            FontSize="30px"
+                            Foreground="#8e8e8f" />
+                        <Label
+                            Margin="20,0,0,0"
+                            VerticalAlignment="Center"
+                            Content="退出"
+                            FontSize="20px"
+                            Foreground="#8e8e8f" />
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Grid>
         <!--  内容区  -->
-        <Grid Grid.Row="1" Background="#F3F3F5">
+        <Grid Grid.Row="1" Background="#E6E6E6">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
@@ -414,18 +522,33 @@
                 Margin="20"
                 Background="#FEFEFE">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="2*" />
                 </Grid.ColumnDefinitions>
                 <Grid>
-                    <Label
-                        HorizontalAlignment="Right"
-                        VerticalAlignment="Center"
-                        Content="△"
-                        FontSize="80px"
-                        FontWeight="Bold"
-                        Foreground="#ffF000" />
+                    <Border
+                        Width="100px"
+                        Height="100px"
+                        Background="#ffF000"
+                        CornerRadius="20" />
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid VerticalAlignment="Bottom">
+                        <Label
+                            Content="成为会员，加入我们"
+                            FontSize="26px"
+                            Foreground="#36332D" />
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Label
+                            Content="立即前往"
+                            FontSize="20px"
+                            Foreground="#A5A7A9" />
+                    </Grid>
                 </Grid>
             </Grid>
             <Grid
@@ -439,7 +562,37 @@
                 Grid.Row="2"
                 Grid.Column="0"
                 Margin="20"
-                Background="#FEFEFE" />
+                Background="#FEFEFE">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Border
+                        Width="100px"
+                        Height="100px"
+                        Background="#2399FD"
+                        CornerRadius="20" />
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Label
+                            VerticalAlignment="Bottom"
+                            Content="我要投资"
+                            FontSize="26px" />
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Label
+                            Content="立即前往"
+                            FontSize="20px"
+                            Foreground="#A5A7A9" />
+                    </Grid>
+                </Grid>
+            </Grid>
             <Grid
                 Grid.Row="2"
                 Grid.Column="1"
