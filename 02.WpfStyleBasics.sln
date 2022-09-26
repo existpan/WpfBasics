@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.WpfAppExercise", "01.Wpf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.WpfAppResourceBase", "10.WpfAppResourceBase\10.WpfAppResourceBase.csproj", "{4910BC82-C1C2-4F8B-B2B3-C4EC53A1FCF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.WpfAppAnimationBasics", "11.WpfAppAnimationBasics\11.WpfAppAnimationBasics.csproj", "{A035152F-1DDB-4E16-B915-79A455F4422C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{4910BC82-C1C2-4F8B-B2B3-C4EC53A1FCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4910BC82-C1C2-4F8B-B2B3-C4EC53A1FCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4910BC82-C1C2-4F8B-B2B3-C4EC53A1FCF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A035152F-1DDB-4E16-B915-79A455F4422C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A035152F-1DDB-4E16-B915-79A455F4422C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A035152F-1DDB-4E16-B915-79A455F4422C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A035152F-1DDB-4E16-B915-79A455F4422C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
