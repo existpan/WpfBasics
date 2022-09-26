@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace _09.WpfAppMvvmLight
     {
         public MainViewModel()
         {
-            Name = "Peter";
+            title = "MvvmLight";
             ShowCommand = new RelayCommand(show);
         }
 
@@ -44,9 +45,7 @@ namespace _09.WpfAppMvvmLight
 
         public void show()
         {
-            Name = "Button";
-            Title = "Label";
-            MessageBox.Show("Click ");
+
         }
     }
 }
