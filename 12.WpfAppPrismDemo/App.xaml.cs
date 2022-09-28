@@ -24,7 +24,9 @@ namespace _12.WpfAppPrismDemo
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
+            containerRegistry.RegisterForNavigation<UserControlA>();
+            containerRegistry.RegisterForNavigation<UserControlB>();
+            containerRegistry.RegisterForNavigation<UserControlC>();
         }
     }
 }
