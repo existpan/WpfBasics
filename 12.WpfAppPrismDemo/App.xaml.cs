@@ -29,11 +29,18 @@ namespace _12.WpfAppPrismDemo
         {
         }
 
-        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        //使用容器添加模块引用的方式
+        //protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        //{
+        //    moduleCatalog.AddModule<ModuleAProfile>();
+        //    moduleCatalog.AddModule<ModuleBProfile>();
+        //    base.ConfigureModuleCatalog(moduleCatalog);
+        //}
+
+        //查找文件路径使用引用dll的方式。
+        protected override IModuleCatalog CreateModuleCatalog()
         {
-            moduleCatalog.AddModule<ModuleAProfile>();
-            moduleCatalog.AddModule<ModuleBProfile>();
-            base.ConfigureModuleCatalog(moduleCatalog);
+            return new DirectoryModuleCatalog() { ModulePath = @".\Modules" };
         }
     }
 }
