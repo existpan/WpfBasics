@@ -1,6 +1,9 @@
 ﻿using _12.WpfAppPrismDemo.Views;
+using _13.WpfAppPrismModuleB;
+using ModuleA;
 using Prism.DryIoc;
 using Prism.Ioc;
+using Prism.Modularity;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -24,9 +27,13 @@ namespace _12.WpfAppPrismDemo
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<UserControlA>();
-            containerRegistry.RegisterForNavigation<UserControlB>();
-            containerRegistry.RegisterForNavigation<UserControlC>();
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            moduleCatalog.AddModule<ModuleAProfile>();
+            moduleCatalog.AddModule<ModuleBProfile>();
+            base.ConfigureModuleCatalog(moduleCatalog);
         }
     }
 }

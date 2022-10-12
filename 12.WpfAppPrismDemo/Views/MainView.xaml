@@ -22,22 +22,15 @@
                 Height="30px"
                 Margin="5"
                 Command="{Binding OpenCommand}"
-                CommandParameter="UserControlA"
+                CommandParameter="ViewA"
                 Content="A" />
             <Button
                 Width="90px"
                 Height="30px"
                 Margin="5"
                 Command="{Binding OpenCommand}"
-                CommandParameter="UserControlB"
+                CommandParameter="ViewB"
                 Content="B" />
-            <Button
-                Width="90px"
-                Height="30px"
-                Margin="5"
-                Command="{Binding OpenCommand}"
-                CommandParameter="UserControlC"
-                Content="C" />
         </StackPanel>
         <ContentControl Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" />
     </Grid>

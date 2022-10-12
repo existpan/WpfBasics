@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _12.WpfAppPrismDemo.Views
+namespace _13.WpfAppPrismModuleB.Views
 {
     /// <summary>
-    /// UserControlA.xaml 的交互逻辑
+    /// ViewB.xaml 的交互逻辑
     /// </summary>
-    public partial class UserControlA : UserControl
+    public partial class ViewB : UserControl
     {
-        public UserControlA()
+        public ViewB()
         {
             InitializeComponent();
         }

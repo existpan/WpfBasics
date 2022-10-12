@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.WpfAppAnimationBasics", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.WpfAppPrismDemo", "12.WpfAppPrismDemo\12.WpfAppPrismDemo.csproj", "{49B31980-1D6D-4C82-92BA-A59C90084C10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleA", "13.WpfAppPrismModuleA\ModuleA.csproj", "{903AACEA-0EA8-4F87-BBA3-59FE677316FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleB", "13.WpfAppPrismModuleB\ModuleB.csproj", "{AAE12F06-E07E-40AF-A755-16DD10509B69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{49B31980-1D6D-4C82-92BA-A59C90084C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49B31980-1D6D-4C82-92BA-A59C90084C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49B31980-1D6D-4C82-92BA-A59C90084C10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903AACEA-0EA8-4F87-BBA3-59FE677316FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903AACEA-0EA8-4F87-BBA3-59FE677316FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903AACEA-0EA8-4F87-BBA3-59FE677316FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903AACEA-0EA8-4F87-BBA3-59FE677316FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE12F06-E07E-40AF-A755-16DD10509B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE12F06-E07E-40AF-A755-16DD10509B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE12F06-E07E-40AF-A755-16DD10509B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE12F06-E07E-40AF-A755-16DD10509B69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
