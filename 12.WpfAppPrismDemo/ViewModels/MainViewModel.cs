@@ -24,7 +24,12 @@ namespace _12.WpfAppPrismDemo.ViewModels
 
         private void Open(string obj)
         {
-            this.regionManager.Regions["ContentRegion"].RequestNavigate(obj);
+            //通过IRegionManager接口获取当前全局定义的可用区域。
+            //往这个区域动态设置内容。
+            //设置内容的方式是通过依赖注入。
+            NavigationParameters keys = new NavigationParameters();
+            keys.Add("Title", "Hello!");
+            this.regionManager.Regions["ContentRegion"].RequestNavigate(obj, keys);
         }
     }
 }

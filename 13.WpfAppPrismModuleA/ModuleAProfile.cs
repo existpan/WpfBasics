@@ -20,5 +20,6 @@ namespace ModuleA
         {
             containerRegistry.RegisterForNavigation<ViewA>();
         }
+
     }
 }
