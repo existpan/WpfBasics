@@ -5,10 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace _13.WpfAppPrismModuleA.ViewModels
 {
-    public class ViewAViewModel : BindableBase, INavigationAware
+    public class ViewAViewModel : BindableBase,IConfirmNavigationRequest
     {
         public ViewAViewModel()
         {
@@ -29,7 +30,6 @@ namespace _13.WpfAppPrismModuleA.ViewModels
                 RaisePropertyChanged();
             }
         }
-
 
         /// <summary>
         /// 每次导航的时候，是否重用原来的实例
@@ -61,5 +61,16 @@ namespace _13.WpfAppPrismModuleA.ViewModels
                 Title = navigationContext.Parameters.GetValue<string>("Title");
             }
         }
+
+        public void ConfirmNavigationRequest(NavigationContext navigationContext, Action<bool> continuationCallback)
+        {
+            bool result = true;
+            if (MessageBox.Show("确认导航？","提示",MessageBoxButton.YesNo)==MessageBoxResult.No)
+            {
+                result = false;
+            }
+            continuationCallback(result);
+        }
+
     }
 }

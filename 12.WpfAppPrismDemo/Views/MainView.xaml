@@ -32,6 +32,18 @@
                 Command="{Binding OpenCommand}"
                 CommandParameter="ViewB"
                 Content="B" />
+            <Button
+                Width="90px"
+                Height="30px"
+                Margin="5"
+                Command="{Binding NextCommand}"
+                Content="下一步" />
+            <Button
+                Width="90px"
+                Height="30px"
+                Margin="5"
+                Command="{Binding BackCommand}"
+                Content="上一步" />
         </StackPanel>
         <ContentControl Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" />
     </Grid>
