@@ -9,7 +9,6 @@
     Title="MainWindow"
     Width="800"
     Height="450"
-    prism:ViewModelLocator.AutoWireViewModel="True"
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
     <Grid>
