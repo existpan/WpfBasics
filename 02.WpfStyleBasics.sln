@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13.PrismRegion", "13.PrismR
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppPrismRegion", "WpfAppPrismRegion\WpfAppPrismRegion.csproj", "{7903A7D0-EFC4-41DC-AEB8-705C4868063C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "18.对话服务", "18.对话服务", "{C7EC59A8-48EF-4028-BC51-AAF41E183B06}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "18.Prism对话服务", "18.Prism对话服务", "{C7EC59A8-48EF-4028-BC51-AAF41E183B06}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppConversationServices", "WpfAppConversationServices\WpfAppConversationServices.csproj", "{DDD13CF3-57DD-4B9B-8C59-083E0B8448EA}"
 EndProject
@@ -42,6 +42,14 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppModularizationModuleA", "WpfAppModularizationModuleA\WpfAppModularizationModuleA.csproj", "{59EB6419-ADF6-47DC-9FEF-4E0FF93B7276}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppModularizationModuleB", "WpfAppModularizationModuleB\WpfAppModularizationModuleB.csproj", "{AFCEA467-106F-4095-9017-5F4CAEE35C04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "17.Prism导航服务", "17.Prism导航服务", "{D4E07951-C72B-4A92-ABB7-E3E8F12EE653}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppNavigationServices", "WpfAppNavigationServices\WpfAppNavigationServices.csproj", "{2D2C163D-79A2-45A3-AB2D-4F5CB84DD4DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppNavigationServicesModuleA", "WpfAppNavigationServicesModuleA\WpfAppNavigationServicesModuleA.csproj", "{B97194AB-8E2A-4F8B-84B9-A6C344CBE4AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppNavigationServicesModuelB", "WpfAppNavigationServicesModuelB\WpfAppNavigationServicesModuelB.csproj", "{60277BB9-DADF-49DE-BBC4-B5017F8449EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +121,18 @@ Global
 		{AFCEA467-106F-4095-9017-5F4CAEE35C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFCEA467-106F-4095-9017-5F4CAEE35C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFCEA467-106F-4095-9017-5F4CAEE35C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D2C163D-79A2-45A3-AB2D-4F5CB84DD4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D2C163D-79A2-45A3-AB2D-4F5CB84DD4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D2C163D-79A2-45A3-AB2D-4F5CB84DD4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D2C163D-79A2-45A3-AB2D-4F5CB84DD4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B97194AB-8E2A-4F8B-84B9-A6C344CBE4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B97194AB-8E2A-4F8B-84B9-A6C344CBE4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B97194AB-8E2A-4F8B-84B9-A6C344CBE4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B97194AB-8E2A-4F8B-84B9-A6C344CBE4AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60277BB9-DADF-49DE-BBC4-B5017F8449EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60277BB9-DADF-49DE-BBC4-B5017F8449EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60277BB9-DADF-49DE-BBC4-B5017F8449EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60277BB9-DADF-49DE-BBC4-B5017F8449EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -126,6 +146,9 @@ Global
 		{1BB1F51E-5070-4190-A98A-8806461E45BB} = {4ED1F617-6327-48A7-9F80-EF5B4ABE3D08}
 		{59EB6419-ADF6-47DC-9FEF-4E0FF93B7276} = {4ED1F617-6327-48A7-9F80-EF5B4ABE3D08}
 		{AFCEA467-106F-4095-9017-5F4CAEE35C04} = {4ED1F617-6327-48A7-9F80-EF5B4ABE3D08}
+		{2D2C163D-79A2-45A3-AB2D-4F5CB84DD4DE} = {D4E07951-C72B-4A92-ABB7-E3E8F12EE653}
+		{B97194AB-8E2A-4F8B-84B9-A6C344CBE4AA} = {D4E07951-C72B-4A92-ABB7-E3E8F12EE653}
+		{60277BB9-DADF-49DE-BBC4-B5017F8449EE} = {D4E07951-C72B-4A92-ABB7-E3E8F12EE653}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF3CA087-EDB5-4C76-9F34-B9F86BD6F8EE}
