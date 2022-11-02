@@ -3,12 +3,11 @@ using Prism.Modularity;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using WpfAppConversationServicesModuleA.ViewModels;
-using WpfAppConversationServicesModuleA.Views;
+using WpfAppConversationServicesModuleB.Views;
 
-namespace WpfAppConversationServicesModuleA
+namespace WpfAppConversationServicesModuleB
 {
-    public class ViewAProfile : IModule
+    public class ViewBProfile : IModule
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
@@ -17,8 +16,7 @@ namespace WpfAppConversationServicesModuleA
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<ViewA, ViewAViewModel>();
+            containerRegistry.RegisterForNavigation<ViewB>();
         }
-
     }
 }

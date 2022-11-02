@@ -29,11 +29,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppPrismRegion", "WpfApp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "18.对话服务", "18.对话服务", "{C7EC59A8-48EF-4028-BC51-AAF41E183B06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppConversationServices", "WpfAppConversationServices\WpfAppConversationServices.csproj", "{DDD13CF3-57DD-4B9B-8C59-083E0B8448EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppConversationServices", "WpfAppConversationServices\WpfAppConversationServices.csproj", "{DDD13CF3-57DD-4B9B-8C59-083E0B8448EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppConversationServicesModuleA", "WpfAppConversationServicesModuleA\WpfAppConversationServicesModuleA.csproj", "{346DB595-045B-4DEF-8C88-A12939323F95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppConversationServicesModuleA", "WpfAppConversationServicesModuleA\WpfAppConversationServicesModuleA.csproj", "{346DB595-045B-4DEF-8C88-A12939323F95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppConversationServicesModuleB", "WpfAppConversationServicesModuleB\WpfAppConversationServicesModuleB.csproj", "{C3AB638B-54ED-44CB-82E9-D2C83FDC092C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppConversationServicesModuleB", "WpfAppConversationServicesModuleB\WpfAppConversationServicesModuleB.csproj", "{C3AB638B-54ED-44CB-82E9-D2C83FDC092C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "16.Prism模块化", "16.Prism模块化", "{4ED1F617-6327-48A7-9F80-EF5B4ABE3D08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppModularization", "WpfAppModularization\WpfAppModularization.csproj", "{1BB1F51E-5070-4190-A98A-8806461E45BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppModularizationModuleA", "WpfAppModularizationModuleA\WpfAppModularizationModuleA.csproj", "{59EB6419-ADF6-47DC-9FEF-4E0FF93B7276}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppModularizationModuleB", "WpfAppModularizationModuleB\WpfAppModularizationModuleB.csproj", "{AFCEA467-106F-4095-9017-5F4CAEE35C04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +101,18 @@ Global
 		{C3AB638B-54ED-44CB-82E9-D2C83FDC092C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3AB638B-54ED-44CB-82E9-D2C83FDC092C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3AB638B-54ED-44CB-82E9-D2C83FDC092C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB1F51E-5070-4190-A98A-8806461E45BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB1F51E-5070-4190-A98A-8806461E45BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB1F51E-5070-4190-A98A-8806461E45BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB1F51E-5070-4190-A98A-8806461E45BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59EB6419-ADF6-47DC-9FEF-4E0FF93B7276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59EB6419-ADF6-47DC-9FEF-4E0FF93B7276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59EB6419-ADF6-47DC-9FEF-4E0FF93B7276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59EB6419-ADF6-47DC-9FEF-4E0FF93B7276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCEA467-106F-4095-9017-5F4CAEE35C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCEA467-106F-4095-9017-5F4CAEE35C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCEA467-106F-4095-9017-5F4CAEE35C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCEA467-106F-4095-9017-5F4CAEE35C04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +123,9 @@ Global
 		{DDD13CF3-57DD-4B9B-8C59-083E0B8448EA} = {C7EC59A8-48EF-4028-BC51-AAF41E183B06}
 		{346DB595-045B-4DEF-8C88-A12939323F95} = {C7EC59A8-48EF-4028-BC51-AAF41E183B06}
 		{C3AB638B-54ED-44CB-82E9-D2C83FDC092C} = {C7EC59A8-48EF-4028-BC51-AAF41E183B06}
+		{1BB1F51E-5070-4190-A98A-8806461E45BB} = {4ED1F617-6327-48A7-9F80-EF5B4ABE3D08}
+		{59EB6419-ADF6-47DC-9FEF-4E0FF93B7276} = {4ED1F617-6327-48A7-9F80-EF5B4ABE3D08}
+		{AFCEA467-106F-4095-9017-5F4CAEE35C04} = {4ED1F617-6327-48A7-9F80-EF5B4ABE3D08}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF3CA087-EDB5-4C76-9F34-B9F86BD6F8EE}

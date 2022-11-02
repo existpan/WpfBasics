@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="WpfAppConversationServicesModuleB.App"
+    x:Class="WpfAppModularization.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:WpfAppConversationServicesModuleB"
+    xmlns:local="clr-namespace:WpfAppModularization"
     StartupUri="MainWindow.xaml">
     <Application.Resources />
 </Application>
