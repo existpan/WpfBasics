@@ -10,7 +10,9 @@ namespace WpfAppConversationServices.ViewModels
     public class MainWindowViewModel:BindableBase 
     {
         public DelegateCommand<string> OpenCommand{ get; set; }
+        
         private IRegionManager regionManager;
+        
         public MainWindowViewModel(IRegionManager regionManager)
         {
             this.OpenCommand = new DelegateCommand<string>(Open);

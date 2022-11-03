@@ -45,11 +45,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppModularizationModuleB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "17.Prism导航服务", "17.Prism导航服务", "{D4E07951-C72B-4A92-ABB7-E3E8F12EE653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppNavigationServices", "WpfAppNavigationServices\WpfAppNavigationServices.csproj", "{2D2C163D-79A2-45A3-AB2D-4F5CB84DD4DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppNavigationServices", "WpfAppNavigationServices\WpfAppNavigationServices.csproj", "{2D2C163D-79A2-45A3-AB2D-4F5CB84DD4DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppNavigationServicesModuleA", "WpfAppNavigationServicesModuleA\WpfAppNavigationServicesModuleA.csproj", "{B97194AB-8E2A-4F8B-84B9-A6C344CBE4AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppNavigationServicesModuleA", "WpfAppNavigationServicesModuleA\WpfAppNavigationServicesModuleA.csproj", "{B97194AB-8E2A-4F8B-84B9-A6C344CBE4AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppNavigationServicesModuelB", "WpfAppNavigationServicesModuelB\WpfAppNavigationServicesModuelB.csproj", "{60277BB9-DADF-49DE-BBC4-B5017F8449EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppNavigationServicesModuelB", "WpfAppNavigationServicesModuelB\WpfAppNavigationServicesModuelB.csproj", "{60277BB9-DADF-49DE-BBC4-B5017F8449EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "19.Prism发布订阅", "19.Prism发布订阅", "{A1EC0CEB-691B-4AFB-8D64-0601340A41C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppPublishSubscriptions", "WpfAppPublishSubscriptions\WpfAppPublishSubscriptions.csproj", "{38AD4C53-6CC0-41D5-99F7-398E2C44122D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublishSubscriptionsModuleA", "PublishSubscriptionsModuleA\PublishSubscriptionsModuleA.csproj", "{B925CE72-9E62-456A-956B-172A9FEAB046}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +139,14 @@ Global
 		{60277BB9-DADF-49DE-BBC4-B5017F8449EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60277BB9-DADF-49DE-BBC4-B5017F8449EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60277BB9-DADF-49DE-BBC4-B5017F8449EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38AD4C53-6CC0-41D5-99F7-398E2C44122D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AD4C53-6CC0-41D5-99F7-398E2C44122D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38AD4C53-6CC0-41D5-99F7-398E2C44122D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38AD4C53-6CC0-41D5-99F7-398E2C44122D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B925CE72-9E62-456A-956B-172A9FEAB046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B925CE72-9E62-456A-956B-172A9FEAB046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B925CE72-9E62-456A-956B-172A9FEAB046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B925CE72-9E62-456A-956B-172A9FEAB046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,6 +163,8 @@ Global
 		{2D2C163D-79A2-45A3-AB2D-4F5CB84DD4DE} = {D4E07951-C72B-4A92-ABB7-E3E8F12EE653}
 		{B97194AB-8E2A-4F8B-84B9-A6C344CBE4AA} = {D4E07951-C72B-4A92-ABB7-E3E8F12EE653}
 		{60277BB9-DADF-49DE-BBC4-B5017F8449EE} = {D4E07951-C72B-4A92-ABB7-E3E8F12EE653}
+		{38AD4C53-6CC0-41D5-99F7-398E2C44122D} = {A1EC0CEB-691B-4AFB-8D64-0601340A41C3}
+		{B925CE72-9E62-456A-956B-172A9FEAB046} = {A1EC0CEB-691B-4AFB-8D64-0601340A41C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF3CA087-EDB5-4C76-9F34-B9F86BD6F8EE}
