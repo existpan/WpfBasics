@@ -22,15 +22,8 @@
                 Height="30px"
                 Margin="5px"
                 Command="{Binding OpenCommand}"
-                CommandParameter="ViewA"
-                Content="ModuleA" />
-            <Button
-                Width="90px"
-                Height="30px"
-                Margin="5px"
-                Command="{Binding OpenCommand}"
-                CommandParameter="ViewB"
-                Content="ModuleB" />
+                CommandParameter="ViewC"
+                Content="弹窗C" />
         </StackPanel>
         <ContentControl Grid.Row="1" prism:RegionManager.RegionName="region" />
     </Grid>

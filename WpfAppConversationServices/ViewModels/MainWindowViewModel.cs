@@ -1,27 +1,36 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
+using Prism.Services.Dialogs;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace WpfAppConversationServices.ViewModels
 {
-    public class MainWindowViewModel:BindableBase 
+    public class MainWindowViewModel : BindableBase
     {
-        public DelegateCommand<string> OpenCommand{ get; set; }
-        
-        private IRegionManager regionManager;
-        
-        public MainWindowViewModel(IRegionManager regionManager)
+        public DelegateCommand<string> OpenCommand { get; set; }
+
+        private IDialogService dialogService;
+
+        public MainWindowViewModel(IDialogService dialogService)
         {
             this.OpenCommand = new DelegateCommand<string>(Open);
-            this.regionManager = regionManager;
+            this.dialogService = dialogService;
         }
 
         private void Open(string obj)
         {
-            regionManager.Regions["region"].RequestNavigate(obj);
+            DialogParameters keys = new DialogParameters();
+            keys.Add("Title", "测试弹窗");
+            dialogService.ShowDialog(obj, keys, callback =>
+              {
+                  if (callback.Result == ButtonResult.OK)
+                  {
+                      string title = callback.Parameters.GetValue<string>("value");
+                  }
+              });
         }
     }
 }

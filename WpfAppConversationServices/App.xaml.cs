@@ -1,4 +1,5 @@
-﻿using Prism.DryIoc;
+﻿using ConversationServicesModuleC;
+using Prism.DryIoc;
 using Prism.Ioc;
 using Prism.Modularity;
 using System;
@@ -10,8 +11,6 @@ using System.Threading.Tasks;
 using System.Windows;
 using WpfAppConversationServices.ViewModels;
 using WpfAppConversationServices.Views;
-using WpfAppConversationServicesModuleA;
-using WpfAppConversationServicesModuleB;
 
 namespace WpfAppConversationServices
 {
@@ -27,13 +26,13 @@ namespace WpfAppConversationServices
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            //containerRegistry.RegisterForNavigation<MainWindowView, MainWindowViewModel>();
+            containerRegistry.RegisterForNavigation<MainWindowView, MainWindowViewModel>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
-            moduleCatalog.AddModule<ViewAProfile>();
-            moduleCatalog.AddModule<ViewBProfile>();
+            moduleCatalog.AddModule<ViewCProfile>();
+
             base.ConfigureModuleCatalog(moduleCatalog);
         }
     }
